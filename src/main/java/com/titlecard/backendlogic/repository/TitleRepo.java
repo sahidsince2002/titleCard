@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.titlecard.backendlogic.entity.Title;
 
 @Repository
-public interface TitleRepo extends JpaRepository<Title, int>{
+public interface TitleRepo extends JpaRepository<Title, Long>{
     
     List<Title> findByNameContainingIgnoreCase(String name);
 }
