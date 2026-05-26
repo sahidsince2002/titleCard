@@ -1,12 +1,15 @@
+server:
+  port: ${PORT:8080}
+  
 spring:
   application:
     name: backendlogic
 
-
+  
   datasource:
-    url: jdbc:postgresql://localhost:5433/postgres
-    username: postgres
-    password: sqlroot
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
 
   jpa:
     hibernate:
